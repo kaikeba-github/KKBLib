@@ -7,6 +7,8 @@
 //
 
 #import "KKBViewController.h"
+#import <KKBTest.h>
+#import <FTTest.h>
 
 @interface KKBViewController ()
 
@@ -18,6 +20,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    FTTest *test = [[FTTest alloc] init];
+    [test output:@"你他娘的真是个人才"];
 }
 
 - (void)didReceiveMemoryWarning

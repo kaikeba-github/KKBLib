@@ -59,12 +59,12 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6B6FF631219C942DD734B2DC /* Pods-kkbPodTestLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kkbPodTestLib_Example.debug.xcconfig"; path = "Target Support Files/Pods-kkbPodTestLib_Example/Pods-kkbPodTestLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		80E91EE61675F77B4D5827B8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		80E91EE61675F77B4D5827B8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BDA4DE8E48FAEC601226232 /* Pods-kkbPodTestLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kkbPodTestLib_Tests.release.xcconfig"; path = "Target Support Files/Pods-kkbPodTestLib_Tests/Pods-kkbPodTestLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		8C5801D67F210A731597D02E /* kkbPodTestLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = kkbPodTestLib.podspec; path = ../kkbPodTestLib.podspec; sourceTree = "<group>"; };
+		8C5801D67F210A731597D02E /* kkbPodTestLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = kkbPodTestLib.podspec; path = ../kkbPodTestLib.podspec; sourceTree = "<group>"; };
 		9EC7F3D25974D1C0FE0C2794 /* Pods_kkbPodTestLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kkbPodTestLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD6767006851C06C4B3B862F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CD6767006851C06C4B3B862F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DA3583DB7020961DB1A54AC1 /* Pods-kkbPodTestLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kkbPodTestLib_Example.release.xcconfig"; path = "Target Support Files/Pods-kkbPodTestLib_Example/Pods-kkbPodTestLib_Example.release.xcconfig"; sourceTree = "<group>"; };
 		ED51ABD085C329EA779B013E /* Pods_kkbPodTestLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kkbPodTestLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -103,7 +103,6 @@
 				1555C62EAA362B88A5B94195 /* Pods-kkbPodTestLib_Tests.debug.xcconfig */,
 				8BDA4DE8E48FAEC601226232 /* Pods-kkbPodTestLib_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -146,9 +145,9 @@
 			children = (
 				6003F59C195388D20070C39A /* KKBAppDelegate.h */,
 				6003F59D195388D20070C39A /* KKBAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* KKBViewController.h */,
 				6003F5A6195388D20070C39A /* KKBViewController.m */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -208,7 +207,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				30347ED286CC2C50F579D317 /* [CP] Embed Pods Frameworks */,
+				169D8CE7DD82B396198C8489 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,6 +248,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "付桃";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = VRPHJ7X6G9;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -259,6 +261,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -296,7 +299,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		30347ED286CC2C50F579D317 /* [CP] Embed Pods Frameworks */ = {
+		169D8CE7DD82B396198C8489 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -519,6 +522,7 @@
 			baseConfigurationReference = 6B6FF631219C942DD734B2DC /* Pods-kkbPodTestLib_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VRPHJ7X6G9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kkbPodTestLib/kkbPodTestLib-Prefix.pch";
 				INFOPLIST_FILE = "kkbPodTestLib/kkbPodTestLib-Info.plist";
@@ -535,6 +539,7 @@
 			baseConfigurationReference = DA3583DB7020961DB1A54AC1 /* Pods-kkbPodTestLib_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VRPHJ7X6G9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kkbPodTestLib/kkbPodTestLib-Prefix.pch";
 				INFOPLIST_FILE = "kkbPodTestLib/kkbPodTestLib-Info.plist";
