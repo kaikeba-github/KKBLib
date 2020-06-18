@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'kkbPodTestLib'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of kkbPodTestLib.'
+  s.version          = '1.0.0'
+  s.summary          = 'test for kkbPodTestLib.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,20 +17,19 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'test frameworks for kkbPodTestLib'
 
-  s.homepage         = 'https://github.com/付桃/kkbPodTestLib'
+  s.homepage         = 'https://www.kaikeba.com'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '付桃' => 'tfu@gaoxiaobang.com' }
-  s.source           = { :git => 'https://github.com/付桃/kkbPodTestLib.git', :tag => s.version.to_s }
+  s.author           = { 'tfu' => 'tfu@gaoxiaobang.com' }
+  s.source           = { :git => 'https://github.com/kaikeba-github/KKBLib.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'kkbPodTestLib/Classes/**/*'
+  s.vendored_frameworks = "kkbPodTestLib/Frameworks/FTTestSDK.framework"
   
   # s.resource_bundles = {
   #   'kkbPodTestLib' => ['kkbPodTestLib/Assets/*.png']
