@@ -1,0 +1,6 @@
+framework module FTTestSDK {
+  umbrella header "FTTestSDK.h"
+
+  export *
+  module * { export * }
+}
